@@ -1,12 +1,17 @@
-#First{
-    background-color: red;
+h1{
+    color: darkgreen;
 }
-.bg-blue{
-    background-color: aqua;
+h2{
+    color: chocolate;
 }
-.red{
-    background-color: yellow;
-}
-#second{
+body{
     background-color: pink;
 }
+div{
+    background-color: cyan;
+    
+}
+.New{
+    background-color: lightskyblue;
+}
+/* hey */
