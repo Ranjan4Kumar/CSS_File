@@ -7,11 +7,19 @@ h2{
 body{
     background-color: pink;
 }
-div{
-    background-color: cyan;
-    
-}
+/* div{
+    background-color: cyan; */
+     /* */ 
+/* }
 .New{
     background-color: lightskyblue;
+} */
+/* *{
+    /* border: 1px solid red;
+} */ */
+.uppercase{
+    text-transform: uppercase;
 }
-/* hey */
+.title{
+    font-weight: bold;
+}
