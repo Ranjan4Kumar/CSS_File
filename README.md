@@ -444,3 +444,68 @@ The 10 pixels of padding increases the height of the box to 220 pixels and the w
 Under this box model, the border thickness and padding are added to the overall dimensions of the box. This makes it difficult to accurately size a box. Over time, this can also make all of a web page’s content difficult to position and manage.
 
 In this brief lesson, you’ll learn how to use a different technique that avoids this problem altogether.
+
+
+
+
+
+                  Foreground vs Background
+Before discussing the specifics of color, it’s important to make two distinctions about color. Color can affect the following design aspects:
+
+The foreground color
+The background color
+Foreground color is the color that an element appears in. For example, when a heading is styled to appear green, the foreground color of the heading has been styled.
+
+Conversely, when a heading is styled so that its background appears yellow, the background color of the heading has been styled
+
+In CSS, these two design aspects can be styled with the following two properties:
+
+color - this property styles an element’s foreground color.
+background-color - this property styles an element’s background color.
+h1 {
+  color: red;
+  background-color: blue;
+}
+In the example above, the text of the heading will appear in red, and the background of the heading will appear blue.
+
+
+
+
+Hue, Saturation, and Lightness
+The RGB color scheme is convenient because it’s very close to how computers represent colors internally. There’s another equally powerful system in CSS called the hue-saturation-lightness color scheme, abbreviated as HSL.
+
+The syntax for HSL is similar to the decimal form of RGB, though it differs in important ways. The first number represents the degree of the hue, and can be between 0 and 360. The second and third numbers are percentages representing saturation and lightness respectively. Here is an example:
+
+color: hsl(120, 60%, 70%);
+Hue is the first number. It refers to an angle on a color wheel. Red is 0 degrees, Green is 120 degrees, Blue is 240 degrees, and then back to Red at 360. You can see an example of a color wheel below.
+
+
+
+
+
+
+
+Opacity and Alpha
+
+
+All of the colors we’ve seen so far have been opaque, or non-transparent. When we overlap two opaque elements, nothing from the bottom element shows through the top element. In this exercise, we’ll change the opacity, or the amount of transparency, of some colors so that some or all of the bottom elements are visible through a covering element.
+
+To use opacity in the HSL color scheme, use hsla instead of hsl, and four values instead of three. For example:
+
+color: hsla(34, 100%, 50%, 0.1);
+The first three values work the same as hsl. The fourth value (which we have not seen before) is the alpha. This last value is sometimes called opacity.
+
+Alpha is a decimal number from zero to one. If alpha is zero, the color will be completely transparent. If alpha is one, the color will be opaque. The value for half-transparent would be 0.5.
+
+You can think of the alpha value as, “the amount of the background to mix with the foreground”. When a color’s alpha is below one, any color behind it will be blended in. The blending happens for each pixel; no blurring occurs.
+
+The RGB color scheme has a similar syntax for opacity, rgba. Again, the first three values work the same as rgb and the last value is the alpha. Here’s an example:
+
+color: rgba(234, 45, 98, 0.33);
+A little unconventional, but still worth mentioning is how hex colors can also have an alpha value. By adding a two-digit hexadecimal value to the end of the six-digit representation (#52BC8280), or a one-digit hexadecimal value to the end of the three-digit representation (#F003), you can change the opacity of a hexadecimal color. Hex opacity ranges from 00 (transparent) to FF (opaque).
+
+Alpha can only be used with HSL, RGB, and hex colors; we cannot add the alpha value to name colors like green.
+
+There is, however, a named color keyword for zero opacity, transparent. It’s equivalent to rgba(0, 0, 0, 0), and it’s used like any other color keyword:
+
+color: transparent;
