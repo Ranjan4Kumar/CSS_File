@@ -11,7 +11,7 @@ CSS- Cascading style sheet which is used for desiging the website and it is very
 
 In HTML if we want to write CSS code lines we will write that below title tag and above the head tag or we can say that in between the title tag and head tag.
 
-##Syntax:-
+## Syntax:-
 
 <!-- <title> </title>
 <style>
@@ -19,17 +19,17 @@ In HTML if we want to write CSS code lines we will write that below title tag an
 <head>
 </head> -->
 
-##Q:- What is DOM?
+## Q:- What is DOM?
 Ans-> It is document object model. when a page is laoded, the browser creates a DOM of the page which is constructed as a tree of object.
 
-##Q:- HTML id & class attributes.
+## Q:- HTML id & class attributes.
 
-##Ans
+## Ans
 :- When an html elements is given an id, it serves as a unique identifiers for that element.
 On the other hand, when an HTML elements is given a class, it now belongs to that class.More than one element can belongs to a single class but every elements must have a unique id(if assigned)
 and one elemement can have multiple classes.
 
-##Synatx:-
+## Synatx:-
 
 <"div id = "first" class  = "c1 c2 c3" >
 <"/div>
@@ -43,11 +43,11 @@ and one elemement can have multiple classes.
 
 here "first" is a unique id
 and c1,c2,c3 are multiple classes followed by spaces.
-*multiple elemet can have one class.
-*One element can have multiple classes.
+* multiple elemet can have one class.
+* One element can have multiple classes.
 
 -> There are 3 ways to add CSS to HTML.
-##"style> tag-> Adding #style> #/style> to HTML-->
+## "style> tag-> Adding #style> #/style> to HTML-->
 
 
 1) By using "style" tag in HTML between "head" tag and "title" tag we can use id which we give and open curlie brackets and give contents and agaian we close it by curlie brackets.
@@ -55,7 +55,7 @@ and c1,c2,c3 are multiple classes followed by spaces.
 WE use " # " for targetting(calling elements) " id " and we use " . " for targetting(means calling class) class 
 Syntax:-
 
-##id_name{
+## id_name{
     background-color: white:
 }
 
@@ -64,18 +64,18 @@ Syntax:-
     color: white; means whatever we wrote inside that background we got that text in white color.
 }
 
-##2. Inline CSS-> Adding CSS using style attribute. -->
+## 2. Inline CSS-> Adding CSS using style attribute. -->
 
 where we can write "style" tag inside our "div" tag folowed by background color(check index2.html file)
 
 
-##3. External CSS -> Adding a style(.css) to HTML using "link" tag.  --> 
+## 3. External CSS -> Adding a style(.css) to HTML using "link" tag.  --> 
 
 we add "link" tag between the "tittle" tag and "head" and we work according to that.
 
-##CSS selectors
+## CSS selectors
 
-##A CSS selectors is used to select an HTML elements for styling.
+## A CSS selectors is used to select an HTML elements for styling.
 
 where 
 body { 
@@ -89,43 +89,43 @@ body {
   h2{
 
   }
-##Here h2 is an element and if we select this, then this is known as element selectors.
+## Here h2 is an element and if we select this, then this is known as element selectors.
 
-##ID selectors:- suppose we have any id mentioned in our files check index1.html where we define id , if we select that id then 
+## ID selectors:- suppose we have any id mentioned in our files check index1.html where we define id , if we select that id then 
 we called it as id selectors #id_name{} (is the id selectors.)
 
-##class selectors:- chekc index3.html in which we define a class name and synatx of selexting class is .class_name{}.
+## Class selectors:- chekc index3.html in which we define a class name and synatx of selexting class is .class_name{}.
 
 
-            ##IMPORTANT NOTES
+            ## IMPORTANT NOTES
 
-##1-> we can group selectors in the way:-
+## 1-> we can group selectors in the way:-
 h1,h1,h3,h4,div{
     color: red;
 
 }
 
-#2-> We can use element.class as a selector like this:
+# 2-> We can use element.class as a selector like this:
 
 p.red{
     color: red # here all the pragraph get red.
 }
 
-#(  "*")-> It is used as a universal selectors to select all the elements.
-*{
+# (  "*")-> It is used as a universal selectors to select all the elements.
+* {
     margin:0
     padding:0
 }
 
 an inline style will overdide external and internal styles.
 
-##"<#div class="red"></div>
+## "<#div class="red"></div>
 <#div id="red"></div>
 
 
                             CHAPTER-2
 CSS rule are simple key value pairs with a selectors we can write css rule to change color and set background.
-#1-> color property-> color property is used to set the text color inside the element.
+# 1-> color property-> color property is used to set the text color inside the element.
 
 p {
     color:red -> this will give the color red to the text. smillalry we can set for the different elements
@@ -133,11 +133,11 @@ p {
 
 Types of color values:-
 
-1.RGB-> specify color using Red, green, Blue values e.g rgb(200,98,70)
-2.HEX code-> Specify using ex code.
+## 1.RGB-> specify color using Red, green, Blue values e.g rgb(200,98,70)
+## 2.HEX code-> Specify using ex code.
            eg. #ff7180
 
-3.HSL--> Specify the color using HSL values (H-Hue, S- Saturation, L-Lightness)
+## 3.HSL--> Specify the color using HSL values (H-Hue, S- Saturation, L-Lightness)
        eg. hsl(8, 90%,63%)
        The values of the color or background color are provided any one of them.
 
@@ -164,13 +164,13 @@ Types of color values:-
                 }
                 Notice how only the “Learn More” link in the Florence, Italy paragraph changed to light green.
 
-               Specificity
+## Specificity
 Specificity is the order by which the browser decides which CSS styles will be displayed. A best practice in CSS is to style elements while using the lowest degree of specificity so that if an element needs a new style, it is easy to override.
 
 IDs are the most specific selector in CSS, followed by classes, and finally, type. For example, consider the following HTML and CSS:
 
 
-                    Chaining
+## Chaining
 When writing CSS rules, it’s possible to require an HTML element to have two or more CSS selectors at the same time.
 
 This is done by combining multiple selectors, which we will refer to as chaining. For instance, if there was a special class for <@h1> elements, the CSS would look like below:
@@ -181,7 +181,7 @@ h1.special {
 The code above would select only the <@h1> elements with a class of special. If a <@p> element also had a class of special, the rule in the example would not style the paragraph.
 
 
-                            Descendant Combinator
+## Descendant Combinator
 In addition to chaining selectors to select elements, CSS also supports selecting elements that are nested within other HTML elements, also known as descendants. For instance, consider the following HTML:
 
 <ul class='main-list'>
@@ -199,8 +199,8 @@ In the example above, .main-list selects the element with the.main-list class (t
 Selecting elements in this way can make our selectors even more specific by making sure they appear in the context we expect.
 
 
-
-                                BACKGROUND SIZE PROPERTY
+  
+## BACKGROUND SIZE PROPERTY
 
                         cover-> fits and no empty sapce remains
                         contain-> fits & image is fully visible
@@ -268,18 +268,18 @@ Selecting elements in this way can make our selectors even more specific by maki
             The !important flag will override any style, however it should almost never be used, as it is extremely difficult to override.
 
 
-            Dealing with overflow
+## Dealing with overflow
 If content is too large for its container, the CSS overflow property will determine how the browser handles the problem.
 
 By default, it will be set to visible and the content will take up extra space. It can also be set to hidden, or to scroll, which will make the overflowing content accessible via scroll bars within the original container.
 
 
 
-Height and Width Maximums/Minimums
+## Height and Width Maximums/Minimums
 The CSS min-width and min-height properties can be used to set a minimum width and minimum height of an element’s box. CSS max-width and max-height properties can be used to set maximum widths and heights for element boxes.
 
 
-                                                Borders
+## Borders
 A border is a line that surrounds an element, like a frame around a painting. Borders can be set with a specific width, style, and color:
 
 width—The thickness of the border. A border’s thickness can be set in pixels or with one of the following keywords: thin, medium, or thick.
