@@ -119,7 +119,7 @@ p.red{
 
 an inline style will overdide external and internal styles.
 
-"<#div class="red"></div>
+##"<#div class="red"></div>
 <#div id="red"></div>
 
 
