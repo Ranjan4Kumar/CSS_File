@@ -3,7 +3,7 @@
 
 HTML is just a skeleton layout of a website we need CSS to design a website add styles to it and meake it look bbeautiful.
 
-##body {
+## body {
     background-color:red;
 }
 
